@@ -5,7 +5,10 @@ def checkout(skus):
         if skus.isupper():
             skus = (list(skus))
             A, C, D, E, F = skus.count('A'), skus.count('C'), skus.count('D'), skus.count('E'), skus.count('F')
-            prices = {'A':50,'B':30,'C':20,'D':15,'E':40,'F':10,'Z':130,'Y':45, 'X':200}
+            prices = {'A':50,'B':30,'C':20,'D':15,'E':40,'F':10,'G':,'H':,'I':,
+                        'J':,'K':,'L':,'M':,'N':,'O':,'P':,'Q':,'R':,'S':,'T':,
+                        'U':,'V':,'W':,'X','Y':,'Z':,
+                        'a':130,'b':45, 'c':200}
 
             #A LOGIC
             five_a, x, y = 0, 0, 0
@@ -34,12 +37,13 @@ def checkout(skus):
                     skus.remove('F')
             F = skus.count('F')
             #Calculate Total
-            skus = (x*'Z'+y*'A'+i*'Y'+j*'B'+C*'C'+D*'D'+five_a*'X'+E*'E'+F*'F')
+            skus = (x*'a'+y*'A'+i*'b'+j*'B'+C*'C'+D*'D'+five_a*'c'+E*'E'+F*'F')
             return(sum([prices[x] for x in list(skus)]))
         else:
             return(-1)
     else:
         return 0
+
 
 
 
