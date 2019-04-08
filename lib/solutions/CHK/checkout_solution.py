@@ -28,7 +28,7 @@ def checkout(skus):
             #B LOGIC
             B = skus.count('B')
             [i, j] = [B // 2, B % 2]
-
+            print(B)
             #F Logic
             if 'F' in skus:
                 for i in range(F // 3):
@@ -43,3 +43,4 @@ def checkout(skus):
             return(-1)
     else:
         return 0
+
