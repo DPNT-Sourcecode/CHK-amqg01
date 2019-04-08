@@ -5,11 +5,10 @@ def checkout(skus):
         if skus.isupper():
             skus = (list(skus))
             A, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z = skus.count('A'), skus.count('C'), skus.count('D'), skus.count('E'), skus.count('F'),
-                                                                                        skus.count('G'), skus.count('H'), skus.count('I'), skus.count('J'),
-                                                                                        skus.count('K'), skus.count('L'), skus.count('M'), skus.count('N'),
-                                                                                        skus.count('O'), skus.count('P'), skus.count('Q'), skus.count('R'),
-                                                                                        skus.count('S'), skus.count('T'), skus.count('U'), skus.count('V'),
-                                                                                        skus.count('W'), skus.count('X'), skus.count('Y'), skus.count('Z')
+            skus.count('G'), skus.count('H'), skus.count('I'), skus.count('J'), skus.count('K'), skus.count('L'), skus.count('M'), skus.count('N'),
+            skus.count('O'), skus.count('P'), skus.count('Q'), skus.count('R'), skus.count('S'), skus.count('T'), skus.count('U'), skus.count('V'),
+            skus.count('W'), skus.count('X'), skus.count('Y'), skus.count('Z')
+            
             prices = {'A':50,'B':30,'C':20,'D':15,'E':40,'F':10,'G':20,'H':10,'I':35,
                         'J':60,'K':80,'L':90,'M':15,'N':40,'O':10,'P':50,'Q':30,'R':50,
                         'S':30,'T':20,'U':40,'V':50,'W':20,'X':90,'Y':10,'Z':50,
@@ -48,4 +47,5 @@ def checkout(skus):
             return(-1)
     else:
         return 0
+
 
