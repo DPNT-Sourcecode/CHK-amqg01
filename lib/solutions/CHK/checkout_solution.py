@@ -7,7 +7,7 @@ def checkout(skus):
             A = skus.count('A')
             map = {'A':50,'B':30,'C':20,'D':15,'E':40,'Z':130,'Y':45, 'X':200}
             five_a, x, y = 0, 0, 0
-            if A % 5 == 0 and A > 0 and A >= 5:
+            if A > 0 and A >= 5:
                 [five_a , y] = [A // 5, A % 5]
             else:
                 if y == 0:
@@ -22,6 +22,7 @@ def checkout(skus):
             return(-1)
     else:
         return 0
+
 
 
 
