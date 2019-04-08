@@ -1,4 +1,5 @@
 import pytest
 
 def test_one():
-    pass
+    assert(checkout('AA') == 100)
+
