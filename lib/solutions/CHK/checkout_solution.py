@@ -9,12 +9,3 @@ def checkout(skus):
         return total
     except:
         -1
-
-
-
-
-
-
-
-
-
