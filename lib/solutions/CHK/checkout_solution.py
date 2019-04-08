@@ -13,7 +13,10 @@ def checkout(skus):
                 [five_a , y] = [A // 5, A % 5]
                 [x, y] = [y // 3, y % 3]
             else:
-                [x, y] = [y // 3, y % 3]
+                if y == 0:
+                    [x, y] = [A // 3, A % 3]
+                else:
+                    [x, y] = [y // 3, y % 3]
             #EE LOGIC
 
             #B LOGIC
@@ -26,10 +29,3 @@ def checkout(skus):
             return(-1)
     else:
         return 0
-
-
-
-
-
-
-
