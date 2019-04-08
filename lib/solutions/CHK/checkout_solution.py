@@ -20,7 +20,7 @@ def checkout(skus):
 
             #E LOGIC
             if 'B' in skus:
-                for i in range(E // 2):
+                for n in range(E // 2):
                     skus.remove('B')
             else:
                 pass
@@ -31,7 +31,7 @@ def checkout(skus):
             print(B)
             #F Logic
             if 'F' in skus:
-                for i in range(F // 3):
+                for n in range(F // 3):
                     skus.remove('F')
             print(skus)
             F = skus.count('F')
@@ -43,4 +43,5 @@ def checkout(skus):
             return(-1)
     else:
         return 0
+
 
