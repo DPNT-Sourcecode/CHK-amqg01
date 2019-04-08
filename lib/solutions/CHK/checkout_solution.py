@@ -4,7 +4,7 @@ def checkout(skus):
     if skus:
         if skus.isupper():
             skus = (list(skus))
-            A, C, D, E, = skus.count('A'), skus.count('C'), skus.count('D'), skus.count('E')
+            A, C, D, E, F = skus.count('A'), skus.count('C'), skus.count('D'), skus.count('E'), skus.count('F')
             prices = {'A':50,'B':30,'C':20,'D':15,'E':40,'F':10,'Z':130,'Y':45, 'X':200}
 
             #A LOGIC
@@ -33,6 +33,7 @@ def checkout(skus):
             if 'F' in skus:
                 for i in range(F // 3):
                     skus.remove('F')
+            print(skus)
             F = skus.count('F')
             #Calculate Total
             skus = (x*'Z'+y*'A'+i*'Y'+j*'B'+C*'C'+D*'D'+five_a*'X'+E*'E'+F*'F')
@@ -41,6 +42,7 @@ def checkout(skus):
             return(-1)
     else:
         return 0
+
 
 
 
