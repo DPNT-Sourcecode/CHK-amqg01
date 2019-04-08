@@ -3,7 +3,7 @@
 def checkout(skus):
     if skus:
         if skus.isupper():
-            map = {'A':50,'B':30,'C':20,'D':15,'E':40,'Z':130,'Y':45}
+            map = {'A':50,'B':30,'C':20,'D':15,'E':40,'Z':130,'Y':45, 'X':200}
             [x, y, what, the] = [(list(skus).count('A') // 3), (list(skus).count('A') % 3), (list(skus).count('A') // 5), (list(skus).count('A') % 5)]
             [i, j] = [(list(skus).count('B') // 2), (list(skus).count('B') % 2)]
             [c, d] = [list(skus).count('C'), list(skus).count('D')]
@@ -13,6 +13,7 @@ def checkout(skus):
             return(-1)
     else:
         return 0
+
 
 
 
