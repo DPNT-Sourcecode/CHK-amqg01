@@ -13,13 +13,14 @@ def checkout(skus):
                 [x, y] = [A // 3, A % 3]
                 five_a = 0
             [i, j] = [(skus.count('B') // 2), (skus.count('B') % 2)]
-            [c, d] = [skus.count('C'), skus.count('D')]
-            skus = (x*'Z'+y*'A'+i*'Y'+j*'B'+c*'C'+d*'D'+five_a*'X')
+            [c, d, e] = [skus.count('C'), skus.count('D'), skus.count('E')]
+            skus = (x*'Z'+y*'A'+i*'Y'+j*'B'+c*'C'+d*'D'+five_a*'X'+e*'E')
             return(sum([map[x] for x in list(skus)]))
         else:
             return(-1)
     else:
         return 0
+
 
 
 
