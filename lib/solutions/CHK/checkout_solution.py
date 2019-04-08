@@ -19,8 +19,11 @@ def checkout(skus):
                     [x, y] = [y // 3, y % 3]
 
             #EE LOGIC
-            for i in range(E // 2):
-                skus.remove('B')
+            if 'B' in skus:
+                for i in range(E // 2):
+                    skus.remove('B')
+            else:
+                pass
 
             #B LOGIC
             B = skus.count('B')
@@ -33,3 +36,4 @@ def checkout(skus):
             return(-1)
     else:
         return 0
+
