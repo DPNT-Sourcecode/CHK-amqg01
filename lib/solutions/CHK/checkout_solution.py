@@ -4,7 +4,7 @@ def checkout(skus):
     if skus:
         if skus.isupper():
             skus = (list(skus))
-            A, B, C, D, E  = skus.count('A'), skus.count('B'), skus.count('C'), skus.count('D'), skus.count('E')
+            A, C, D, E  = skus.count('A'), skus.count('C'), skus.count('D'), skus.count('E')
             map = {'A':50,'B':30,'C':20,'D':15,'E':40,'Z':130,'Y':45, 'X':200}
 
             #A LOGIC
@@ -17,9 +17,13 @@ def checkout(skus):
                     [x, y] = [A // 3, A % 3]
                 else:
                     [x, y] = [y // 3, y % 3]
+
             #EE LOGIC
+            for i in range(E // 2):
+                skus.remove('B')
 
             #B LOGIC
+            B = skus.count('B')
             [i, j] = [B // 2, B % 2]
 
             #Calculate Total
