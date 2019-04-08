@@ -10,7 +10,10 @@ def checkout(skus):
             if A % 5 == 0 and A > 0 and A >= 5:
                 [five_a , y] = [A // 5, A % 5]
             else:
-                [x, y] = [y // 3, y % 3]
+                if y == 0:
+                    [x, y] = [A // 3, A % 3]
+                else:
+                    [x, y] = [y // 3, y % 3]
             [i, j] = [(skus.count('B') // 2), (skus.count('B') % 2)]
             [c, d, e] = [skus.count('C'), skus.count('D'), skus.count('E')]
             skus = (x*'Z'+y*'A'+i*'Y'+j*'B'+c*'C'+d*'D'+five_a*'X'+e*'E')
@@ -19,5 +22,6 @@ def checkout(skus):
             return(-1)
     else:
         return 0
+
 
 
