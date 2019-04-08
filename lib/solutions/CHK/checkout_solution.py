@@ -35,6 +35,7 @@ def checkout(skus):
                     skus.remove('F')
             print(skus)
             F = skus.count('F')
+            print(F,x,y,i,j,C,D,five_a,E)
             #Calculate Total
             skus = (x*'Z'+y*'A'+i*'Y'+j*'B'+C*'C'+D*'D'+five_a*'X'+E*'E'+F*'F')
             return(sum([prices[x] for x in list(skus)]))
@@ -42,8 +43,3 @@ def checkout(skus):
             return(-1)
     else:
         return 0
-
-
-
-
-
