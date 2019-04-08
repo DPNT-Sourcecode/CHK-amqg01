@@ -5,8 +5,9 @@ def checkout(skus):
 
     return sum([map[x] for x in list(skus)])
 
-    if list(skus).count('A') % 3 == 0:
-        
+    [x, y] = [(list(skus).count('A') // 3), (list(skus).count('A') % 3)]
+    [i, j] = [(list(skus).count('B') // 2), (list(skus).count('B') % 2)]
+
 
 
 
