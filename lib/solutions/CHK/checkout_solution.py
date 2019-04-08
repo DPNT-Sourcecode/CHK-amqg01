@@ -9,7 +9,8 @@ def checkout(skus):
         skus = (x*'E'+y*'A'+i*'F'+j*'B'+c*'C'+d*'D')
         return(sum([map[x] for x in list(skus)]))
     else:
-        -1
+        return(-1)
+
 
 
 
